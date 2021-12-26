@@ -28,7 +28,8 @@ public class authority_activity extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
-   //     getSupportFragmentManager().beginTransaction().replace(R.id.frameContainer, new add_item_fragment()).commit();
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameContainer, new shopping_fragment()).commit();
 
 
 

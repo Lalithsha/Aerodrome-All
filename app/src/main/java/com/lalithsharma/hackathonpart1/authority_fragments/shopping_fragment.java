@@ -5,12 +5,18 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.lalithsharma.hackathonpart1.R;
+import com.lalithsharma.hackathonpart1.adapters.shopping_myadapter;
+import com.lalithsharma.hackathonpart1.dataModel.datamodel;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +33,9 @@ public class shopping_fragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    RecyclerView recyclerView;
+    ArrayList<datamodel> dataHolder;
 
     public shopping_fragment() {
         // Required empty public constructor
@@ -66,6 +75,45 @@ public class shopping_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        return inflater.inflate(R.layout.fragment_shopping_fragment, container, false);
+
+        View view =  inflater.inflate(R.layout.fragment_shopping_fragment, container, false);
+        recyclerView = view.findViewById(R.id.recyclerView_xml);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        dataHolder = new ArrayList<>();
+
+        int i=1;
+        datamodel ob1 = new  datamodel(R.drawable.shopping,"Shop No."+i,"This is a famous clothes shop");
+        dataHolder.add(ob1);
+
+        datamodel ob2 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a shoe shop");
+        dataHolder.add(ob2);
+
+        datamodel ob3= new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a coat shop");
+        dataHolder.add(ob3);
+
+        datamodel ob4 = new  datamodel(R.drawable.shopping,"Shop No."+ i++,"This is a gadget shop");
+        dataHolder.add(ob4);
+
+        datamodel ob5 = new  datamodel(R.drawable.shopping,"Shop No."+ i++,"This is a clothes shop");
+        dataHolder.add(ob5);
+
+        datamodel ob6 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob6);
+
+        datamodel ob7 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob7);
+
+        datamodel ob8 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob8);
+
+        datamodel ob9 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob9);
+
+        datamodel ob10 = new  datamodel(R.drawable.shopping,"Shop No."+i,"This is a clothes shop");
+        dataHolder.add(ob10);
+
+        recyclerView.setAdapter(new shopping_myadapter(dataHolder));
+
+        return view;
     }
 }
