@@ -3,15 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adapters.gridRecyclerView_Fragment"
-    android:id="@+id/mainContainer_grid">
+    tools:context=".authority_fragments.gridRecyclerView_Fragment">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <GridView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/gridView_shopping"
-        android:numColumns="2"/>
+        android:text="@string/hello_blank_fragment"
+        android:background="@color/black"/>
 
 </FrameLayout>
