@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HackathonPart1">
         <activity
+            android:name=".activities_shopping.gridView_shopping_activity"
+            android:exported="false" />
+        <activity
+            android:name=".sample"
+            android:exported="false"
+            android:label="@string/title_activity_sample"
+            android:theme="@style/Theme.HackathonPart1.NoActionBar" />
+        <activity
+            android:name=".gridView_shopping.gridView_shopping"
+            android:exported="false"
+            android:label="@string/title_activity_grid_view_shopping"
+            android:theme="@style/Theme.HackathonPart1.NoActionBar" />
+        <activity
+            android:name=".shopping_gridView_activity.gridView_activity_shopping"
+            android:exported="false"
+            android:label="@string/title_activity_grid_view_shopping"
+            android:theme="@style/Theme.HackathonPart1.NoActionBar" />
+        <activity
             android:name=".user_activity"
             android:exported="false" />
         <activity
