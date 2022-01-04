@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities_shopping.shopping_page">
+
+    <ImageView
+        android:id="@+id/shopping_page_image"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="75dp"
+        android:foregroundGravity="center_vertical"
+        android:src="@drawable/shopping" />
+
+    <TextView
+        android:id="@+id/shopping_page_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Item name:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/shopping_page_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Size:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/shopping_page_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+
+        android:text="Description:"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/shopping_page_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="In stock:"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/shopping_page_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Price: ₹"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -14,24 +14,24 @@
 
 
         <ImageView
-            android:id="@+id/shopping_image1"
+            android:id="@+id/food_beverages_image_listView"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="8dp"
             android:layout_marginRight="10dp"
-            android:src="@drawable/shopping" />
+            android:src="@drawable/beverage" />
 
 
         <TextView
-            android:id="@+id/shopName"
+            android:id="@+id/shopName_listView_food_and_beverages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@id/shopping_image1"
+            android:layout_toRightOf="@id/food_beverages_image_listView"
             android:gravity="center_vertical"
-            android:text="Raymond"
+            android:text="Subway"
             android:textColor="#000"
             android:textSize="25dp"
             android:textStyle="bold"
@@ -39,12 +39,12 @@
             />
 
         <TextView
-            android:id="@+id/shopDescription"
+            android:id="@+id/shopDescription_listView_food_and_beverages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@id/shopping_image1"
-            android:layout_below="@id/shopName"
+            android:layout_toRightOf="@id/food_beverages_image_listView"
+            android:layout_below="@id/shopName_listView_food_and_beverages"
             android:text="Descirption"
             android:textSize="20dp"/>
 

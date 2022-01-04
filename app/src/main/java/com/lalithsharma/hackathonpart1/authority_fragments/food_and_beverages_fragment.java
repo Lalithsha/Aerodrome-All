@@ -3,12 +3,19 @@ package com.lalithsharma.hackathonpart1.authority_fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.lalithsharma.hackathonpart1.R;
+import com.lalithsharma.hackathonpart1.adapters.food_and_beverages_listView_adapter;
+import com.lalithsharma.hackathonpart1.dataModel.data_model_listView_food_and_beverages;
+import com.lalithsharma.hackathonpart1.dataModel.datamodel;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +32,10 @@ public class food_and_beverages_fragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    RecyclerView recyclerView;
+    ArrayList<data_model_listView_food_and_beverages>  dataHolder;
+
 
     public food_and_beverages_fragment() {
         // Required empty public constructor
@@ -58,9 +69,49 @@ public class food_and_beverages_fragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_food_and_beverages_fragment, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        View view =  inflater.inflate(R.layout.fragment_food_and_beverages_fragment, container, false);
+        recyclerView = view.findViewById(R.id.recyclerView_food_and_beverages_xml);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        dataHolder = new ArrayList<>();
+
+
+
+        int i=1;
+        data_model_listView_food_and_beverages ob1 = new data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+i,"This is a famous burger shop");
+        dataHolder.add(ob1);
+
+        data_model_listView_food_and_beverages ob2 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a pizza shop");
+        dataHolder.add(ob2);
+
+        data_model_listView_food_and_beverages ob3=  new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a north indian food shop");
+        dataHolder.add(ob3);
+
+        data_model_listView_food_and_beverages ob4 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a chinese shop");
+        dataHolder.add(ob4);
+
+        data_model_listView_food_and_beverages ob5 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob5);
+
+        data_model_listView_food_and_beverages ob6 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob6);
+
+        data_model_listView_food_and_beverages ob7 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob7);
+
+        data_model_listView_food_and_beverages ob8 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob8);
+
+        data_model_listView_food_and_beverages ob9 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob9);
+
+        data_model_listView_food_and_beverages ob10 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        dataHolder.add(ob10);
+
+
+        recyclerView.setAdapter(new food_and_beverages_listView_adapter(dataHolder));
+        return view;
+
     }
 }

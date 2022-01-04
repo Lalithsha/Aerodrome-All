@@ -1,5 +1,7 @@
 package com.lalithsharma.hackathonpart1.authority_fragments;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,8 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 
 import com.lalithsharma.hackathonpart1.R;
+import com.lalithsharma.hackathonpart1.activities_shopping.gridView_shopping_activity;
+import com.lalithsharma.hackathonpart1.adapters.shopping_gridView_Adapter;
 import com.lalithsharma.hackathonpart1.adapters.shopping_myadapter;
 import com.lalithsharma.hackathonpart1.dataModel.datamodel;
 
@@ -36,6 +41,9 @@ public class shopping_fragment extends Fragment {
 
     RecyclerView recyclerView;
     ArrayList<datamodel> dataHolder;
+    Activity context;
+    GridView gridView;
+    shopping_myadapter shopping_myadapter_inside;
 
     public shopping_fragment() {
         // Required empty public constructor
@@ -80,6 +88,15 @@ public class shopping_fragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerView_xml);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         dataHolder = new ArrayList<>();
+     //   recyclerView.setAdapter(new shopping_gridView_Adapter(getActivity(),this.));
+
+        // yt code
+        context = getActivity();
+
+
+
+
+
 
         int i=1;
         datamodel ob1 = new  datamodel(R.drawable.shopping,"Shop No."+i,"This is a famous clothes shop");
@@ -88,13 +105,13 @@ public class shopping_fragment extends Fragment {
         datamodel ob2 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a shoe shop");
         dataHolder.add(ob2);
 
-        datamodel ob3= new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a coat shop");
+        datamodel ob3=  new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a coat shop");
         dataHolder.add(ob3);
 
-        datamodel ob4 = new  datamodel(R.drawable.shopping,"Shop No."+ i++,"This is a gadget shop");
+        datamodel ob4 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a gadget shop");
         dataHolder.add(ob4);
 
-        datamodel ob5 = new  datamodel(R.drawable.shopping,"Shop No."+ i++,"This is a clothes shop");
+        datamodel ob5 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
         dataHolder.add(ob5);
 
         datamodel ob6 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
@@ -109,11 +126,20 @@ public class shopping_fragment extends Fragment {
         datamodel ob9 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
         dataHolder.add(ob9);
 
-        datamodel ob10 = new  datamodel(R.drawable.shopping,"Shop No."+i,"This is a clothes shop");
+        datamodel ob10 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
         dataHolder.add(ob10);
 
-        recyclerView.setAdapter(new shopping_myadapter(dataHolder));
+        shopping_myadapter_inside  = new shopping_myadapter(dataHolder,getActivity());
+
+        recyclerView.setAdapter(shopping_myadapter_inside);
+
+        shopping_myadapter_inside.notifyDataSetChanged();
+
+     //   recyclerView.setAdapter(new shopping_myadapter(dataHolder));
 
         return view;
     }
-}
+
+
+
+    }

@@ -21,80 +21,15 @@ import com.lalithsharma.hackathonpart1.dataModel.data_model_gridView;
 
 import java.util.ArrayList;
 
-/*
-  public class shopping_gridView_Adapter extends RecyclerView.Adapter<shopping_gridView_Adapter.gridViewHolder> {
-
-
-      ArrayList<data_model_gridView> dataholder;
-
-      public shopping_gridView_Adapter(ArrayList<data_model_gridView> dataholder) {
-          this.dataholder = dataholder;
-      }
-
-
-      @NonNull
-      @Override
-      public gridViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-          View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.singlecolumndesigntemplate, parent, false);
-          return new gridViewHolder(view);
-
-      }
-
-      @Override
-      public void onBindViewHolder(@NonNull shopping_gridView_Adapter.gridViewHolder holder, int position) {
-          holder.image.setImageResource(dataholder.get(position).getImage());
-          holder.name.setText(dataholder.get(position).getHeader());
-          holder.description.setText(dataholder.get(position).getDescription());
-          holder.price.setText(dataholder.get(position).getPrice());
-
-      }
-
-
-     */
-/* @Override
-      public void onBindViewHolder(@NonNull gridViewHolder holder, int position) {
-
-      }*//*
-
-
-      @Override
-      public int getItemCount() {
-          return dataholder.size();
-      }
-
-      public class gridViewHolder extends RecyclerView.ViewHolder {
-          TextView name,description,price;
-          ImageView image;
-
-          public gridViewHolder(@NonNull View itemView) {
-              super(itemView);
-
-              image = itemView.findViewById(R.id.gridImage);
-              name = itemView.findViewById(R.id.shop_item_Name_gridView);
-              description = itemView.findViewById(R.id.shop_item_description_gridView);
-              price = itemView.findViewById(R.id.price_gridView);
-
-          }
-  }
-*/
-
-
-
-
-
-
 // gfg code
     public class shopping_gridView_Adapter extends ArrayAdapter<data_model_gridView> {
-
-
 
 
         public shopping_gridView_Adapter(@NonNull Context context, ArrayList<data_model_gridView> courseModelArrayList) {
             super(context, 0, courseModelArrayList);
         }
 
-        
+
 
         @NonNull
         @Override
@@ -119,15 +54,6 @@ import java.util.ArrayList;
 
 
     }
-
-
-
-
-
-
-    /*class gridViewHolder  extends RecyclerView.ViewHolder {
-        }
-    }*/
 
 
 
