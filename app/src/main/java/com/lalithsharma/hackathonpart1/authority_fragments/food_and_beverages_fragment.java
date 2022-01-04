@@ -1,5 +1,6 @@
 package com.lalithsharma.hackathonpart1.authority_fragments;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -35,6 +36,8 @@ public class food_and_beverages_fragment extends Fragment {
 
     RecyclerView recyclerView;
     ArrayList<data_model_listView_food_and_beverages>  dataHolder;
+    Activity context;
+    food_and_beverages_listView_adapter food_and_beverages_listView_adapter_inside;
 
 
     public food_and_beverages_fragment() {
@@ -76,7 +79,7 @@ public class food_and_beverages_fragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         dataHolder = new ArrayList<>();
 
-
+        context = getActivity();
 
         int i=1;
         data_model_listView_food_and_beverages ob1 = new data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+i,"This is a famous burger shop");
@@ -109,9 +112,15 @@ public class food_and_beverages_fragment extends Fragment {
         data_model_listView_food_and_beverages ob10 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
         dataHolder.add(ob10);
 
-
-        recyclerView.setAdapter(new food_and_beverages_listView_adapter(dataHolder));
+        food_and_beverages_listView_adapter_inside  = new food_and_beverages_listView_adapter(dataHolder,getActivity());
+        recyclerView.setAdapter(food_and_beverages_listView_adapter_inside);
+        food_and_beverages_listView_adapter_inside.notifyDataSetChanged();
         return view;
+
+
+
+        /*recyclerView.setAdapter(new food_and_beverages_listView_adapter(dataHolder));
+        return view;*/
 
     }
 }

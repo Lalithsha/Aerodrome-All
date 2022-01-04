@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.lalithsharma.hackathonpart1.R;
+import com.lalithsharma.hackathonpart1.activities_shopping.gridView_food_and_beverages_activity;
 import com.lalithsharma.hackathonpart1.activities_shopping.gridView_shopping_activity;
 import com.lalithsharma.hackathonpart1.dataModel.data_model_listView_food_and_beverages;
 
@@ -23,11 +24,11 @@ public class food_and_beverages_listView_adapter  extends RecyclerView.Adapter<f
     ArrayList<data_model_listView_food_and_beverages> dataholder ;
     Activity context;
 
-  /*  public food_and_beverages_listView_adapter(ArrayList<data_model_listView_food_and_beverages >dataholder, Activity context){
+    public food_and_beverages_listView_adapter(ArrayList<data_model_listView_food_and_beverages >dataholder, Activity context){
         this.dataholder = dataholder;
         this.context = context;
 
-    }*/
+    }
 
     public food_and_beverages_listView_adapter(ArrayList<data_model_listView_food_and_beverages> dataHolder) {
         this.dataholder = dataHolder;
@@ -50,13 +51,13 @@ public class food_and_beverages_listView_adapter  extends RecyclerView.Adapter<f
         holder.name.setText(dataholder.get(position).getHeader());
         holder.description.setText(dataholder.get(position).getDesc());
 
-       /* holder.mainView.setOnClickListener(new View.OnClickListener() {
+        holder.mainView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, .class);
+                Intent intent = new Intent(context, gridView_food_and_beverages_activity.class);
                 context.startActivity(intent);
             }
-        });*/
+        });
 
     }
 
@@ -69,11 +70,11 @@ public class food_and_beverages_listView_adapter  extends RecyclerView.Adapter<f
 
         ImageView img;
         TextView name, description;
-      //  View mainView;
+        View mainView;
 
         public myviewholder(@NonNull View itemView) {
             super(itemView);
-         //   mainView = itemView;
+            mainView = itemView;
 
             img = itemView.findViewById(R.id.food_beverages_image_listView);
             name = itemView.findViewById(R.id.shopName_listView_food_and_beverages);
