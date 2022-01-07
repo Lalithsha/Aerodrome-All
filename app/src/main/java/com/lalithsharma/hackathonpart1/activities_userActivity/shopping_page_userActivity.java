@@ -36,7 +36,7 @@ public class shopping_page_userActivity extends AppCompatActivity {
         description.setText(ob1.getDescription());
         size.setText(ob1.getSize());
         inStock.setText(ob1.getInStock());
-        price.setText(Integer.toString(ob1.getPrice()));
+        price.setText("₹"+Integer.toString(ob1.getPrice()));
         return  ;
 
 

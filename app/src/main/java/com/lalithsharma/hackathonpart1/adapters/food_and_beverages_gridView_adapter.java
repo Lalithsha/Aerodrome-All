@@ -40,7 +40,7 @@ public class food_and_beverages_gridView_adapter extends ArrayAdapter<data_model
         name.setText(courseModel.getHeader());
 
         description.setText(courseModel.getDescription());
-        price.setText(Integer.toString(courseModel.getPrice()).toString());
+        price.setText("₹"+Integer.toString(courseModel.getPrice()).toString());
         image.setImageResource(courseModel.getImage());
         return listitemView;
 

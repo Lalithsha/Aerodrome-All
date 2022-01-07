@@ -9,10 +9,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-import com.lalithsharma.hackathonpart1.authority_fragments.add_item_fragment;
-import com.lalithsharma.hackathonpart1.authority_fragments.food_and_beverages_fragment;
-import com.lalithsharma.hackathonpart1.authority_fragments.shopping_fragment;
-import com.lalithsharma.hackathonpart1.userActivity_fragment.userActivity_food_and_beverages_fragment;
+import com.lalithsharma.hackathonpart1.userActivity_fragment.userActivity_food_and_beverages_listView_fragment;
 import com.lalithsharma.hackathonpart1.userActivity_fragment.userActivity_shopping_fragment_listView;
 
 public class user_activity extends AppCompatActivity {
@@ -35,12 +32,12 @@ public class user_activity extends AppCompatActivity {
                 Fragment fragment = null;
                 switch (item.getItemId()) {
 
-                    case R.id.shopping:
+                    case R.id.shopping_userActivity:
                         fragment = new userActivity_shopping_fragment_listView();
                         break;
 
-                    case R.id.food_beverages:
-                        fragment = new userActivity_food_and_beverages_fragment();
+                    case R.id.food_beverages_userActivity:
+                        fragment = new userActivity_food_and_beverages_listView_fragment();
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.frameContainer_userActivity, fragment).commit();

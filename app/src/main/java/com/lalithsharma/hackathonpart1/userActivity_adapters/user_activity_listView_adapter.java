@@ -20,6 +20,8 @@ import com.lalithsharma.hackathonpart1.dataModel.datamodel;
 
 import java.util.ArrayList;
 
+// Shopping's Recycler view in user Activity
+
 public class user_activity_listView_adapter extends   RecyclerView.Adapter<user_activity_listView_adapter.myviewholderUserActivity> {
 
     ArrayList<data_model_userActivity_listView> dataholder;

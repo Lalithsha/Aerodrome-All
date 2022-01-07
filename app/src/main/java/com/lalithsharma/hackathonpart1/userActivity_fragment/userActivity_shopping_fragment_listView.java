@@ -142,10 +142,7 @@ public class userActivity_shopping_fragment_listView extends Fragment {
         recyclerView.setAdapter(user_activity_listView_adapter_inside);
 
         user_activity_listView_adapter_inside.notifyDataSetChanged();
-
-        // Inflate the layout for this fragment
-      //  return inflater.inflate(R.layout.fragment_user_activity_shopping_list_view, container, false);
-    //    recyclerView.setAdapter(new user_activity_listView_adapter(dataHolder));
+        
 
         return view;
     }

@@ -4,28 +4,33 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_authority.xml" value="0.264" />
-        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_food_and_beverages_page.xml" value="0.694090382387022" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_food_and_beverages_page.xml" value="0.48731642189586116" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_food_and_beverages_page_user.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_grid_view_food_and_beverages.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_grid_view_food_and_beverages_user_activity.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_grid_view_shopping.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_grid_view_shopping_user.xml" value="0.264" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_shopping_page.xml" value="0.40649149922720246" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_shopping_page_user.xml" value="0.264" />
-        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_user.xml" value="0.4" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/activity_user.xml" value="0.2" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/fragment_add_item.xml" value="0.4412050534499514" />
-        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/fragment_food_and_beverages_fragment.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/fragment_food_and_beverages_fragment.xml" value="0.4" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/fragment_grid_recycler_view_.xml" value="0.4412050534499514" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/fragment_grid_recycler_view_frag.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/fragment_shopping_fragment.xml" value="0.4412050534499514" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/fragment_user_activity_food_and_beverages_fragment.xml" value="0.4412050534499514" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/fragment_user_activity_shopping_list_view.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_column_design_food_and_beverages_template.xml" value="0.23143115942028986" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_column_design_food_and_beverages_template_gridView.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_column_design_food_and_beverages_template_gridview.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_column_design_food_and_beverages_template_gridview.xml" value="0.1" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_column_design_food_and_beverages_user_activity.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_column_design_shopping_grid_view_user_activity.xml" value="0.4" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_column_design_template.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_row_design_template.xml" value="0.4" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_row_design_template_food_beverages_listview.xml" value="0.264" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_row_design_template_user_activity_list_view.xml" value="0.4" />
+        <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/single_row_food_and_beverage_design_template_user_activity.xml" value="0.21467391304347827" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/layout/singlecolumndesigntemplate.xml" value="0.264" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/menu/navigation_menu.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lalith Sharma/hackathonpart1/app/src/main/res/menu/navigation_menu_user_activity.xml" value="0.23645833333333333" />

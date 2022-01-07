@@ -40,7 +40,6 @@ public class food_and_beverages_listView_adapter  extends RecyclerView.Adapter<f
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_row_design_template_food_beverages_listview,parent,false);
-
         return new myviewholder(view);
     }
 
