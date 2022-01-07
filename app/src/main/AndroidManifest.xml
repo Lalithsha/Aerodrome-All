@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HackathonPart1">
         <activity
+            android:name=".activities_userActivity.shopping_page_userActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities_userActivity.gridView_shopping_activity_userActivity"
+            android:exported="false" />
+        <activity
             android:name=".food_and_beverages_activities.food_and_beverages_page"
             android:exported="false" />
         <activity
