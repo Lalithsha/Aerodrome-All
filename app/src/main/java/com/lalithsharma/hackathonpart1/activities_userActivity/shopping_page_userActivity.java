@@ -2,6 +2,7 @@ package com.lalithsharma.hackathonpart1.activities_userActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,6 +17,12 @@ public class shopping_page_userActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_page_user);
 
+        Intent intent = getIntent();
+
+        String headers = intent.getStringExtra("header");
+        String descriptions = intent.getStringExtra("description");
+
+        int prices = intent.getIntExtra("price",0);
 
 
         ImageView img = findViewById(R.id.shopping_page_image_userActivity);
@@ -32,12 +39,11 @@ public class shopping_page_userActivity extends AppCompatActivity {
                 "This is a unlike color shirt with differnet design","Medium","Yes");
 
         img.setImageResource(ob1.getImage());
-        header.setText(ob1.getHeader());
-        description.setText(ob1.getDescription());
+        header.setText(headers);
+        description.setText(descriptions);
         size.setText(ob1.getSize());
         inStock.setText(ob1.getInStock());
-        price.setText("₹"+Integer.toString(ob1.getPrice()));
-        return  ;
+        price.setText("₹"+prices);
 
 
 

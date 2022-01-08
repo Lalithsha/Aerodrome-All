@@ -13,6 +13,7 @@ import com.lalithsharma.hackathonpart1.adapters.food_and_beverages_gridView_adap
 import com.lalithsharma.hackathonpart1.adapters.shopping_gridView_Adapter;
 import com.lalithsharma.hackathonpart1.dataModel.data_model_gridView;
 import com.lalithsharma.hackathonpart1.dataModel.data_model_gridView_food_and_beverages;
+import com.lalithsharma.hackathonpart1.dataModel.data_model_userActivity_gridView_shopping;
 import com.lalithsharma.hackathonpart1.databinding.ActivityMainBinding;
 import com.lalithsharma.hackathonpart1.food_and_beverages_activities.food_and_beverages_page;
 
@@ -34,38 +35,46 @@ public class gridView_food_and_beverages_activity extends AppCompatActivity {
         coursesGV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(),new food_and_beverages_page().getClass());
+
+             //   data_model_gridView_food_and_beverages gridView_data = dataModel.get(position);
+
+                Intent intent = new Intent(getApplicationContext(), food_and_beverages_page.class);
+
+               /* intent.putExtra("header",gridView_data.getHeader());
+                intent.putExtra("description",gridView_data.getDescription());
+                intent.putExtra("price",gridView_data.getPrice());*/
+
                 startActivity(intent);
             }
         });
 
 
 
-        data_model_gridView_food_and_beverages ob1 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"veg-burger shop","It has some good variety of vegan burgers",50);
+        data_model_gridView_food_and_beverages ob1 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Crispy veg burger","Crispy veg burger, our best seller ",50);
         dataModel.add(ob1);
 
-        data_model_gridView_food_and_beverages ob2 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"This is a vegan burger","It has whole wheat and lots of vegetables",254);
+        data_model_gridView_food_and_beverages ob2 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Classic veg burger","It has veg patty with american flavours",254);
         dataModel.add(ob2);
 
-        data_model_gridView_food_and_beverages ob3 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Coffee shop","It is a blue color shirt with checked lines",781);
+        data_model_gridView_food_and_beverages ob3 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Paneer burger","It has patty with panner sandwiched with spices and vegies ",81);
         dataModel.add(ob3);
 
-        data_model_gridView_food_and_beverages ob4 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Shirt","It is a blue color shirt with checked lines",1877);
+        data_model_gridView_food_and_beverages ob4 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Chicken burger","It has crisp burger with chicken patty and lots of vegies",177);
         dataModel.add(ob4);
 
-        data_model_gridView_food_and_beverages ob5 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Shirt","It is a blue color shirt with checked lines",100);
+        data_model_gridView_food_and_beverages ob5 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Veg-Pizza","Veg pizza has double thin crisp layer of crust with lots of veggie's",100);
         dataModel.add(ob5);
 
-        data_model_gridView_food_and_beverages ob6 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Shirt","It is a blue color shirt with checked lines",100);
+        data_model_gridView_food_and_beverages ob6 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Special Mushroom Burger","It is a unique burger which consist of veggies and mushroom ",100);
         dataModel.add(ob6);
 
-        data_model_gridView_food_and_beverages ob8 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Shirt","It is a blue color shirt with checked lines",107);
+        data_model_gridView_food_and_beverages ob8 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Espresso","Start you day with power pack coffee",107);
         dataModel.add(ob8);
 
-        data_model_gridView_food_and_beverages ob9 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Shirt","It is a blue color shirt with checked lines",1000);
+        data_model_gridView_food_and_beverages ob9 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Cafe latte","It has espresso mixed with streamed milk",100);
         dataModel.add(ob9);
 
-        data_model_gridView_food_and_beverages ob10 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Shirt","It is a blue color shirt with checked lines",100);
+        data_model_gridView_food_and_beverages ob10 = new data_model_gridView_food_and_beverages(R.drawable.beverage,"Chai","It is a tea beverage ",100);
         dataModel.add(ob10);
 
         food_and_beverages_gridView_adapter adapter = new food_and_beverages_gridView_adapter(this,dataModel);

@@ -2,6 +2,7 @@ package com.lalithsharma.hackathonpart1.activities_userActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +16,12 @@ public class food_and_beverages_page_userActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_and_beverages_page_user);
+
+       /* Intent intent = getIntent();
+        String headers = intent.getStringExtra("header");
+        String descriptions = intent.getStringExtra("description");*/
+
+      //  int prices = intent.getIntExtra("price",0);
 
         ImageView img = findViewById(R.id.food_and_beverage_page_image_userActivity);
         TextView header  =  findViewById(R.id.food_and_beverage_page_item_name_userActivity);
@@ -38,7 +45,7 @@ public class food_and_beverages_page_userActivity extends AppCompatActivity {
         inStock.setText(ob1.getInStock());
         price.setText("₹"+Integer.toString(ob1.getPrice()));
         nutrients.setText(ob1.getNutrients());
-        return  ;
+
 
     }
 }

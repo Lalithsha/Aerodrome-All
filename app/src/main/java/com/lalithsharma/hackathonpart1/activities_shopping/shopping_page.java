@@ -2,10 +2,12 @@ package com.lalithsharma.hackathonpart1.activities_shopping;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.lalithsharma.hackathonpart1.R;
 
@@ -26,6 +28,16 @@ public class shopping_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_page);
 
+        Intent intent = getIntent();
+
+        String headers = intent.getStringExtra("header");
+        String descriptions = intent.getStringExtra("description");
+
+        int prices = intent.getIntExtra("price",0);
+
+
+
+
        ImageView img = findViewById(R.id.shopping_page_image);
        TextView header  =  findViewById(R.id.shopping_page_item_name);
        TextView description = findViewById(R.id.shopping_page_description);
@@ -37,15 +49,15 @@ public class shopping_page extends AppCompatActivity {
 
 
         custom_ArrayList_shopping_page ob1 = new custom_ArrayList_shopping_page(R.drawable.shopping,100,"Shirt",
-                "This is a unlike color shirt with differnet design","Medium","Yes");
+                "This is a unlike color shirt with different design","Medium, small","Yes");
 
        img.setImageResource(ob1.getImage());
-       header.setText(ob1.getHeader());
-       description.setText(ob1.getDescription());
+       header.setText(headers);
+       description.setText(descriptions);
        size.setText(ob1.getSize());
        inStock.setText(ob1.getInStock());
-       price.setText("₹"+Integer.toString(ob1.getPrice()));
-        return  ;
+       price.setText("₹"+prices);
+
 
     }
 }

@@ -98,35 +98,37 @@ public class shopping_fragment extends Fragment {
 
 
 
-        int i=1;
-        datamodel ob1 = new  datamodel(R.drawable.shopping,"Shop No."+i,"This is a famous clothes shop");
+
+        datamodel ob1 = new  datamodel(R.drawable.shopping,"Allen Solly","This is a famous clothes shop. It is well know for its luxurious clothes");
         dataHolder.add(ob1);
 
-        datamodel ob2 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a shoe shop");
+        datamodel ob2 = new  datamodel(R.drawable.shopping,"Levi's","Levi’s offers jeans, trousers, shorts, shirts, jackets, sweaters, sweatshirts, T-shirts");
         dataHolder.add(ob2);
 
-        datamodel ob3=  new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a coat shop");
+        datamodel ob3=  new  datamodel(R.drawable.shopping,"Provogue","Provogue has a comprehensive collection of men’s and women’s fashion apparel and accessories");
         dataHolder.add(ob3);
 
-        datamodel ob4 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a gadget shop");
+        datamodel ob4 = new  datamodel(R.drawable.shopping,"Van Heusen","The brand is popular for formal clothing. Hence, Van Heusen is best for office or business attire.");
         dataHolder.add(ob4);
 
-        datamodel ob5 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        datamodel ob5 = new  datamodel(R.drawable.shopping,"Park Avenue","Park Avenue provides stylish and innovative wardrobe solutions to well-dressed gentlemen.");
         dataHolder.add(ob5);
 
-        datamodel ob6 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        datamodel ob6 = new  datamodel(R.drawable.shopping,"Mufti","Basically, Mufti is a menswear brand."+
+                "\n" +
+                "It also caters to a wide range of dress materials. The list includes T-shirts, shorts, joggers, outerwear, blazers, and some accessories also");
         dataHolder.add(ob6);
 
-        datamodel ob7 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        datamodel ob7 = new  datamodel(R.drawable.shopping,"Peter England","The brand is known for its standardized fits, superior quality, and wide range and fashionable styles.");
         dataHolder.add(ob7);
 
-        datamodel ob8 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        datamodel ob8 = new  datamodel(R.drawable.shopping,"Louis Philippe" ,"An international super brand for menswear clothing, Louis Philippe offers a range of formals, semi-formals, custom-made clothing, and accessories.");
         dataHolder.add(ob8);
 
-        datamodel ob9 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        datamodel ob9 = new  datamodel(R.drawable.shopping,"Raymond" ,"Company is the largest integrated manufacturer of worsted fabric in the world.");
         dataHolder.add(ob9);
 
-        datamodel ob10 = new  datamodel(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+        datamodel ob10 = new  datamodel(R.drawable.shopping,"Adidas","Adidas is the largest sportswear manufacturer in Europe and the second-largest in the world.");
         dataHolder.add(ob10);
 
         shopping_myadapter_inside  = new shopping_myadapter(dataHolder,getActivity());

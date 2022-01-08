@@ -89,52 +89,54 @@ public class userActivity_shopping_fragment_listView extends Fragment {
         int i=1;
 
         data_model_userActivity_listView ob1 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+i,"This is a famous clothes shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Allen Solly","This is a famous clothes shop. It is well know for its luxurious clothes");
         dataHolder.add(ob1);
 
 
         data_model_userActivity_listView ob2 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a shoe shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Levi's","Levi’s offers jeans, trousers, shorts, shirts, jackets, sweaters, sweatshirts, T-shirts");
         dataHolder.add(ob2);
 
 
         data_model_userActivity_listView ob3=  new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a coat shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Provogue","Provogue has a comprehensive collection of men’s and women’s fashion apparel and accessories");
         dataHolder.add(ob3);
 
 
         data_model_userActivity_listView ob4 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a gadget shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Van Heusen","The brand is popular for formal clothing. Hence, Van Heusen is best for office or business attire");
         dataHolder.add(ob4);
 
 
         data_model_userActivity_listView ob5 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Park Avenue","Park Avenue provides stylish and innovative wardrobe solutions to well-dressed gentlemen.");
         dataHolder.add(ob5);
 
 
         data_model_userActivity_listView ob6 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Mufti","Basically, Mufti is a menswear brand."+
+                "It also caters to a wide range of dress materials. The list includes T-shirts, shorts, joggers, outerwear, blazers, and some accessories also");
         dataHolder.add(ob6);
 
 
         data_model_userActivity_listView ob7 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Peter England","The brand is known for its standardized fits, superior quality, and wide range and fashionable styles.");
         dataHolder.add(ob7);
 
 
         data_model_userActivity_listView ob8 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Louis Philippe","An international super brand for menswear clothing, " +
+                                                     "Louis Philippe offers a range of formals, semi-formals, custom-made clothing, and accessories.");
         dataHolder.add(ob8);
 
 
         data_model_userActivity_listView ob9 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Raymond","Company is the largest integrated manufacturer of worsted fabric in the world.");
         dataHolder.add(ob9);
 
 
         data_model_userActivity_listView ob10 = new
-                data_model_userActivity_listView(R.drawable.shopping,"Shop No."+ ++i,"This is a clothes shop");
+                data_model_userActivity_listView(R.drawable.shopping,"Adidas","Adidas is the largest sportswear manufacturer in Europe and the second-largest in the world.");
         dataHolder.add(ob10);
 
 

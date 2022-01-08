@@ -81,35 +81,35 @@ public class food_and_beverages_fragment extends Fragment {
 
         context = getActivity();
 
-        int i=1;
-        data_model_listView_food_and_beverages ob1 = new data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+i,"This is a famous burger shop");
+
+        data_model_listView_food_and_beverages ob1 = new data_model_listView_food_and_beverages(R.drawable.beverage,"Burger King","This is a famous burger shop originated from florida");
         dataHolder.add(ob1);
 
-        data_model_listView_food_and_beverages ob2 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a pizza shop");
+        data_model_listView_food_and_beverages ob2 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"McDonald’s","It is a fast food company which delivers food and beverage's to its customers");
         dataHolder.add(ob2);
 
-        data_model_listView_food_and_beverages ob3=  new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a north indian food shop");
+        data_model_listView_food_and_beverages ob3=  new  data_model_listView_food_and_beverages(R.drawable.beverage,"Pizza hut","They serve their signature pan pizza and other dishes including pasta, breadsticks and desserts.");
         dataHolder.add(ob3);
 
-        data_model_listView_food_and_beverages ob4 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a chinese shop");
+        data_model_listView_food_and_beverages ob4 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"KFC","KFC specialized in fried chicken and also has many other snacks");
         dataHolder.add(ob4);
 
-        data_model_listView_food_and_beverages ob5 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        data_model_listView_food_and_beverages ob5 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Subway","Subway offers submarine sandwiches, wraps, salads and beverages");
         dataHolder.add(ob5);
 
-        data_model_listView_food_and_beverages ob6 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        data_model_listView_food_and_beverages ob6 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Domino's Pizza","Domino's is a leading pizza making company and it makes different variety of pizza's");
         dataHolder.add(ob6);
 
-        data_model_listView_food_and_beverages ob7 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        data_model_listView_food_and_beverages ob7 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Haldiram’s","Haldiram's is an Indian sweets, snacks and restaurant");
         dataHolder.add(ob7);
 
-        data_model_listView_food_and_beverages ob8 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        data_model_listView_food_and_beverages ob8 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Starbucks","Starbucks serves hot and cold drinks, whole-bean coffee, micro-ground instant coffee, espresso, caffe latte, full and loose-leaf teas, juices, Frappuccino beverages, pastries, and snacks.");
         dataHolder.add(ob8);
 
-        data_model_listView_food_and_beverages ob9 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        data_model_listView_food_and_beverages ob9 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Café Coffee Day","This is a clothes shop");
         dataHolder.add(ob9);
 
-        data_model_listView_food_and_beverages ob10 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Shop No."+ ++i,"This is a clothes shop");
+        data_model_listView_food_and_beverages ob10 = new  data_model_listView_food_and_beverages(R.drawable.beverage,"Chai Point","Chai points brings a perfectly brewed cup of Chai made with fresh, natural ingredients to its customers");
         dataHolder.add(ob10);
 
         food_and_beverages_listView_adapter_inside  = new food_and_beverages_listView_adapter(dataHolder,getActivity());
